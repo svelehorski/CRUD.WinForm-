@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "fJG/JQwxBiuc7LtDs9l9ADuLkHL4T4K7gvXo1RNXVkdXwuMg0yhQf7xGBGLpuiiahPcghHWQ3jTQs6u+j9AQ6w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Velehors\\source\\repos\\CRUD.WinForm,\\WinFormCRUD\\WinFormCRUD.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Velehors\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.28\\microsoft.windowsdesktop.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\Velehors\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.28\\microsoft.netcore.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\Velehors\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.28\\microsoft.aspnetcore.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\Velehors\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.28\\microsoft.netcore.app.host.win-x64.6.0.28.nupkg.sha512"
+  ],
+  "logs": []
+}

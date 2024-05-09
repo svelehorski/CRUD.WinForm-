@@ -28,69 +28,72 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            richTextBox1 = new RichTextBox();
+            btnAgregar = new Button();
+            btnModificar = new Button();
+            IstVisor = new ListBox();
+            btnEliminar = new Button();
             SuspendLayout();
             // 
-            // button1
+            // btnAgregar
             // 
-            button1.Location = new Point(32, 419);
-            button1.Name = "button1";
-            button1.Size = new Size(151, 52);
-            button1.TabIndex = 0;
-            button1.Text = "Agregar";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            btnAgregar.Location = new Point(22, 420);
+            btnAgregar.Name = "btnAgregar";
+            btnAgregar.Size = new Size(151, 52);
+            btnAgregar.TabIndex = 0;
+            btnAgregar.Text = "Agregar";
+            btnAgregar.UseVisualStyleBackColor = true;
+            btnAgregar.Click += btnAgregar_Click;
             // 
-            // button2
+            // btnModificar
             // 
-            button2.Location = new Point(337, 419);
-            button2.Name = "button2";
-            button2.Size = new Size(151, 52);
-            button2.TabIndex = 1;
-            button2.Text = "Modificar";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            btnModificar.Location = new Point(324, 420);
+            btnModificar.Name = "btnModificar";
+            btnModificar.Size = new Size(151, 52);
+            btnModificar.TabIndex = 1;
+            btnModificar.Text = "Modificar";
+            btnModificar.UseVisualStyleBackColor = true;
+            btnModificar.Click += btnModificar_Click;
             // 
-            // button3
+            // IstVisor
             // 
-            button3.Location = new Point(643, 419);
-            button3.Name = "button3";
-            button3.Size = new Size(151, 52);
-            button3.TabIndex = 2;
-            button3.Text = "Eliminar";
-            button3.UseVisualStyleBackColor = true;
+            IstVisor.BackColor = SystemColors.ButtonHighlight;
+            IstVisor.FormattingEnabled = true;
+            IstVisor.ItemHeight = 15;
+            IstVisor.Location = new Point(22, 12);
+            IstVisor.Name = "IstVisor";
+            IstVisor.Size = new Size(762, 394);
+            IstVisor.TabIndex = 3;
             // 
-            // richTextBox1
+            // btnEliminar
             // 
-            richTextBox1.Location = new Point(32, 12);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(762, 381);
-            richTextBox1.TabIndex = 3;
-            richTextBox1.Text = "";
+            btnEliminar.Location = new Point(618, 420);
+            btnEliminar.Name = "btnEliminar";
+            btnEliminar.Size = new Size(150, 52);
+            btnEliminar.TabIndex = 4;
+            btnEliminar.Text = "Eliminar";
+            btnEliminar.UseVisualStyleBackColor = true;
+            btnEliminar.Click += btnEliminar_Click;
             // 
             // FrmCRUD
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(815, 514);
-            Controls.Add(richTextBox1);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            BackColor = Color.White;
+            ClientSize = new Size(815, 484);
+            Controls.Add(btnEliminar);
+            Controls.Add(IstVisor);
+            Controls.Add(btnModificar);
+            Controls.Add(btnAgregar);
             Name = "FrmCRUD";
-            Text = "Form1";
-            Load += FrmCRUD_Load;
+            Text = "Crud 1.0";
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private RichTextBox richTextBox1;
+        private Button btnAgregar;
+        private Button btnModificar;
+        private ListBox IstVisor;
+        private Button btnEliminar;
     }
 }

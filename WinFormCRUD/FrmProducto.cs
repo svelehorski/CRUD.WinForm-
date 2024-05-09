@@ -14,7 +14,7 @@ namespace WinFormCRUD
     public partial class FrmProducto : Form
     {
 
-       public Producto producto;
+        public Producto producto;
 
 
         public FrmProducto()
@@ -22,22 +22,29 @@ namespace WinFormCRUD
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        public FrmProducto(Producto producto):this()
         {
-            int code = Convert.ToInt32(txtCodigo.Text);
+            this.producto = producto;
+            this.txtCodigo.Text = producto.codigo.ToString();
+            this.txtNombre.Text = producto.nombre;
+            this.txtPrecio.Text = producto.precio.ToString();
+            this.txtCodigo.Enabled = false;
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void btnAceptar_Click(object sender, EventArgs e)
         {
-
+            int codigo = Convert.ToInt32(txtCodigo.Text);
+            double precio = Convert.ToDouble(txtPrecio.Text);
+            this.producto = new Producto(codigo,txtNombre.Text, precio);
+            this.DialogResult = DialogResult.OK; 
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void btnCancelar_Click(object sender, EventArgs e)
         {
-
+            this.DialogResult = DialogResult.Cancel;
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void FrmProducto_Load(object sender, EventArgs e)
         {
 
         }
